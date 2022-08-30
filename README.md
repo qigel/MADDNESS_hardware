@@ -20,9 +20,9 @@ Module MADDNESS has these inputs:
 5. clk - clock signal
 
 Structure of internal memory:
-[0:trees\*layers-1] - indicies for classification trees, indicies for same layer lay near
-[trees\*layers:trees\*layers+((2\*\*layers)-1)\*trees-1] - values for classification trees, value sets for same layer lay near without spaces
-[trees\*layers+((2\*\*layers)-1)\*trees:trees\*layers+((2\*\*layers)-1)\*trees+trees\*output_len\*(2\*\*layers)-1] - pre-calculated results (rows-prototypes, multiplied by matrix B), result rows for same tree lay near
+- [0:trees\*layers-1] - indicies for classification trees, indicies for same layer lay near
+- [trees\*layers:trees\*layers+((2\*\*layers)-1)\*trees-1] - values for classification trees, value sets for same layer lay near without spaces
+- [trees\*layers+((2\*\*layers)-1)\*trees:trees\*layers+((2\*\*layers)-1)\*trees+trees\*output_len\*(2\*\*layers)-1] - pre-calculated results (rows-prototypes, multiplied by matrix B), result rows for same tree lay near
 
 Module MADDNESS_calc has these inputs:
 1. in - input row a of the input data matrix A
